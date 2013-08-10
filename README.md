@@ -15,3 +15,6 @@ boost.py
 
 backwards_selection.py      
 :: This is essentially the same as Miroslaw Horbal's logistic regression code (http://www.kaggle.com/c/amazon-employee-access-challenge/forums/t/4838/python-code-to-achieve-0-90-auc-with-logistic-regression), but I've implemented a backwards greedy selection model that also checks to see if previously dropped features increase AUC when added back to the model.
+
+cutoffs.py
+:: Lots of feature engineering: 4th degree combinations of features and rare feature event cutoffs. For the latter, occurrences of levels of features were counted, and arbitrary cutoffs were introduced. The best cutoffs were determined by cross-validation of AUC scores, and these were included in the final logistic regression models.
