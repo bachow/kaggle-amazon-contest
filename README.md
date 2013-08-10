@@ -8,10 +8,10 @@ The training and testing data can be downloaded from http://www.kaggle.com/c/ama
 Short Descriptions of Scripts
 =============================
 kaggle.py
-              :: Contains shared functions and classes upon which other scripts depend. This must be in the same directory as the other scripts
+:: Contains shared functions and classes upon which other scripts depend. This must be in the same directory as the other scripts
               
 boost.py
-              :: Ensemble learner based on an ADABoost implementation. Initially, the learner creates a bootstrap with replacement data set from the training set upon which to train a logistic model. The learner finds misclassified entries and creates weights for subsequent bootstrapping. This process is iterated N times. All predictions are collected and an ensemble model is fit to the predictions to create weights for model averaging.
+:: Ensemble learner based on an ADABoost implementation. Initially, the learner creates a bootstrap with replacement data set from the training set upon which to train a logistic model. The learner finds misclassified entries and creates weights for subsequent bootstrapping. This process is iterated N times. All predictions are collected and an ensemble model is fit to the predictions to create weights for model averaging.
 
 backwards_selection.py      
-              :: This is essentially the same as Miroslaw Horbal's logistic regression code (http://www.kaggle.com/c/amazon-employee-access-challenge/forums/t/4838/python-code-to-achieve-0-90-auc-with-logistic-regression), but I've implemented a backwards greedy selection model that also checks to see if previously dropped features increase AUC when added back to the model.
+:: This is essentially the same as Miroslaw Horbal's logistic regression code (http://www.kaggle.com/c/amazon-employee-access-challenge/forums/t/4838/python-code-to-achieve-0-90-auc-with-logistic-regression), but I've implemented a backwards greedy selection model that also checks to see if previously dropped features increase AUC when added back to the model.
